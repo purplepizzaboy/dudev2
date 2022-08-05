@@ -1,0 +1,614 @@
+local YBA = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Tab1 = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Roka = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Warning = Instance.new("TextLabel")
+local PureRoka = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Arrow = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Warning2 = Instance.new("TextLabel")
+local Rib = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Next = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Close = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local Separator = Instance.new("Frame")
+local Tab2 = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local Title_2 = Instance.new("TextLabel")
+local Separator_2 = Instance.new("Frame")
+local Back = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local Requiem = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local IY = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Buy = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local Item = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local Warning_2 = Instance.new("TextLabel")
+local Close_2 = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+
+--Properties:
+
+YBA.Name = "YBA"
+YBA.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = YBA
+Main.Active = false
+Main.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Main.BackgroundTransparency = 1.000
+Main.Position = UDim2.new(0.362424254, 0, 0.337821305, 0)
+Main.Size = UDim2.new(0, 578, 0, 340)
+
+Tab1.Name = "Tab1"
+Tab1.Parent = Main
+Tab1.Active = true
+Tab1.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Tab1.Position = UDim2.new(-0.000897556543, 0, -0.00041398406, 0)
+Tab1.Size = UDim2.new(0, 578, 0, 340)
+Tab1.Draggable = true
+
+UICorner.CornerRadius = UDim.new(0, 9)
+UICorner.Parent = Tab1
+
+Roka.Name = "Roka"
+Roka.Parent = Tab1
+Roka.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Roka.Position = UDim2.new(0.0553633235, 0, 0.314705878, 0)
+Roka.Size = UDim2.new(0, 200, 0, 50)
+Roka.Font = Enum.Font.Ubuntu
+Roka.Text = "Use Roka"
+Roka.TextColor3 = Color3.fromRGB(255, 255, 255)
+Roka.TextScaled = true
+Roka.TextSize = 14.000
+Roka.TextWrapped = true
+Roka.MouseButton1Down:Connect(function()
+	local Player = game.Players.LocalPlayer
+	local Character = Player.Character
+
+	function Roka() 
+		local ohString1 = "EndDialogue"
+		local ohTable2 = {
+			["NPC"] = "Rokakaka",
+			["Option"] = "Option1",
+			["Dialogue"] = "Dialogue2"
+		}
+		Character.RemoteEvent:FireServer(ohString1, ohTable2)
+	end
+
+	Roka()
+end)
+
+UICorner_2.CornerRadius = UDim.new(0, 9)
+UICorner_2.Parent = Roka
+
+Warning.Name = "Warning"
+Warning.Parent = Tab1
+Warning.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Warning.BackgroundTransparency = 1.000
+Warning.Position = UDim2.new(0.0553633235, 0, 0.461764693, 0)
+Warning.Size = UDim2.new(0, 200, 0, 50)
+Warning.Font = Enum.Font.Ubuntu
+Warning.Text = "This will reset your current stand."
+Warning.TextColor3 = Color3.fromRGB(255, 0, 0)
+Warning.TextScaled = true
+Warning.TextSize = 14.000
+Warning.TextWrapped = true
+
+PureRoka.Name = "PureRoka"
+PureRoka.Parent = Tab1
+PureRoka.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+PureRoka.Position = UDim2.new(0.0553633235, 0, 0.673529387, 0)
+PureRoka.Size = UDim2.new(0, 200, 0, 50)
+PureRoka.Font = Enum.Font.Ubuntu
+PureRoka.Text = "Use Pure Roka"
+PureRoka.TextColor3 = Color3.fromRGB(255, 255, 255)
+PureRoka.TextScaled = true
+PureRoka.TextSize = 14.000
+PureRoka.TextWrapped = true
+PureRoka.MouseButton1Down:Connect(function()
+	local Player = game.Players.LocalPlayer
+	local Character = Player.Character
+
+	function PureRoka() 
+		local ohString1 = "EndDialogue"
+		local ohTable2 = {
+			["NPC"] = "Pure Rokakaka", 
+			["Option"] = "Option1", 
+			["Dialogue"] = "Dialogue2"
+		}
+		Character.RemoteEvent:FireServer(ohString1, ohTable2)
+	end
+
+	PureRoka()
+end)
+
+UICorner_3.CornerRadius = UDim.new(0, 9)
+UICorner_3.Parent = PureRoka
+
+Arrow.Name = "Arrow"
+Arrow.Parent = Tab1
+Arrow.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Arrow.Position = UDim2.new(0.598615885, 0, 0.314705878, 0)
+Arrow.Size = UDim2.new(0, 200, 0, 50)
+Arrow.Font = Enum.Font.Ubuntu
+Arrow.Text = "Use Arrow"
+Arrow.TextColor3 = Color3.fromRGB(255, 255, 255)
+Arrow.TextScaled = true
+Arrow.TextSize = 14.000
+Arrow.TextWrapped = true
+Arrow.MouseButton1Down:Connect(function()
+	local UseRibCage = false
+
+	local Player = game.Players.LocalPlayer
+	local Character = Player.Character
+
+	function UseArrow()
+		local ohString1 = "EndDialogue"
+		local ohTable2 = {
+			["NPC"] = "Mysterious Arrow",
+			["Option"] = "Option1",
+			["Dialogue"] = "Dialogue2"
+		}
+
+		Character.RemoteEvent:FireServer(ohString1, ohTable2)
+		print("-- Used Arrow --")
+	end
+
+	function Worthiness()
+
+		local ohString1 = "LearnSkill"
+		local ohTable2 = {
+			["Skill"] = "Agility I",
+			["SkillTreeType"] = "Character"
+		}
+
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+
+		ohTable2["Skill"] = "Agility II"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+		ohTable2["Skill"] = "Agility III"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+		ohTable2["Skill"] = "Agility IV"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+		ohTable2["Skill"] = "Agility V"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+		ohTable2["Skill"] = "Worthiness I"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+		ohTable2["Skill"] = "Worthiness II"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+		ohTable2["Skill"] = "Sturdiness I"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+
+		if UseRibCage == true then
+			ohTable2["Skill"] = "Worthiness III"
+			Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+			ohTable2["Skill"] = "Worthiness IV"
+			Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+			ohTable2["Skill"] = "Worthiness V"
+			Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+		end
+	end
+
+	if Player.PlayerStats.Stand.Value == "None" then
+		Worthiness()
+		if UseRibCage == false then
+			UseArrow()
+		end
+	else
+		Arrow.Text = "You already have a stand!"
+		wait(3)
+		Arrow.Text = "Use Arrow"
+	end
+end)
+
+UICorner_4.CornerRadius = UDim.new(0, 9)
+UICorner_4.Parent = Arrow
+
+Warning2.Name = "Warning2"
+Warning2.Parent = Tab1
+Warning2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Warning2.BackgroundTransparency = 1.000
+Warning2.Position = UDim2.new(0.598615885, 0, 0.461764693, 0)
+Warning2.Size = UDim2.new(0, 200, 0, 50)
+Warning2.Font = Enum.Font.Ubuntu
+Warning2.Text = "This will also use a Lucky Arrow."
+Warning2.TextColor3 = Color3.fromRGB(255, 0, 0)
+Warning2.TextScaled = true
+Warning2.TextSize = 14.000
+Warning2.TextWrapped = true
+
+Rib.Name = "Rib"
+Rib.Parent = Tab1
+Rib.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Rib.Position = UDim2.new(0.598615885, 0, 0.673529387, 0)
+Rib.Size = UDim2.new(0, 200, 0, 50)
+Rib.Font = Enum.Font.Ubuntu
+Rib.Text = "Use Rib"
+Rib.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rib.TextScaled = true
+Rib.TextSize = 14.000
+Rib.TextWrapped = true
+Rib.MouseButton1Down:Connect(function()
+	local UseRibCage = true
+
+	local Player = game.Players.LocalPlayer
+	local Character = Player.Character
+
+	function Worthiness()
+
+		local ohString1 = "LearnSkill"
+		local ohTable2 = {
+			["Skill"] = "Agility I",
+			["SkillTreeType"] = "Character"
+		}
+
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+
+		ohTable2["Skill"] = "Agility II"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+		ohTable2["Skill"] = "Agility III"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+		ohTable2["Skill"] = "Agility IV"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+		ohTable2["Skill"] = "Agility V"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+		ohTable2["Skill"] = "Worthiness I"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+		ohTable2["Skill"] = "Worthiness II"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+		ohTable2["Skill"] = "Sturdiness I"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+
+		if UseRibCage == true then
+			ohTable2["Skill"] = "Worthiness III"
+			Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+			ohTable2["Skill"] = "Worthiness IV"
+			Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+			ohTable2["Skill"] = "Worthiness V"
+			Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+		end
+	end
+
+	function RibCage()
+		local ohString1 = "EndDialogue"
+		local ohTable2 = {
+			["Dialogue"] = "Dialogue2",
+			["NPC"] = "Rib Cage of The Saint's Corpse",
+			["Option"] = "Option1"
+		}
+		Character.RemoteEvent:FireServer(ohString1, ohTable2)
+	end
+
+	if Player.PlayerStats.Stand.Value == "None" then
+		Worthiness()
+		if UseRibCage == true then
+			RibCage()
+		end
+	else
+		Rib.Text = "You already have a stand!"
+		wait(3)
+		Rib.Text = "Use Rib"
+	end
+end)
+
+UICorner_5.CornerRadius = UDim.new(0, 9)
+UICorner_5.Parent = Rib
+
+Next.Name = "Next"
+Next.Parent = Tab1
+Next.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Next.Position = UDim2.new(0.654999971, 0, 0.882000029, 0)
+Next.Size = UDim2.new(0, 200, 0, 40)
+Next.Font = Enum.Font.Ubuntu
+Next.Text = "Next >>>"
+Next.TextColor3 = Color3.fromRGB(255, 255, 255)
+Next.TextScaled = true
+Next.TextSize = 14.000
+Next.TextWrapped = true
+Next.MouseButton1Down:Connect(function()
+	Tab2.Active = true
+	Tab2.Visible = true
+	
+	Tab1.Active = false
+	Tab1.Visible = false
+end)
+
+UICorner_6.CornerRadius = UDim.new(0, 9)
+UICorner_6.Parent = Next
+
+Close.Name = "Close"
+Close.Parent = Tab1
+Close.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Close.Position = UDim2.new(-0.00200000009, 0, 0.882000029, 0)
+Close.Size = UDim2.new(0, 200, 0, 40)
+Close.Font = Enum.Font.Ubuntu
+Close.Text = "Close"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+Close.MouseButton1Down:Connect(function()
+	YBA:Destroy()
+end)
+
+UICorner_7.CornerRadius = UDim.new(0, 9)
+UICorner_7.Parent = Close
+
+Title.Name = "Title"
+Title.Parent = Tab1
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Size = UDim2.new(0, 578, 0, 56)
+Title.Font = Enum.Font.Ubuntu
+Title.Text = "dude's yba stand farm essentials"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+Separator.Name = "Separator"
+Separator.Parent = Tab1
+Separator.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Separator.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Separator.BorderSizePixel = 0
+Separator.Position = UDim2.new(0, 0, 0.188235298, 0)
+Separator.Size = UDim2.new(0, 578, 0, 6)
+
+Tab2.Name = "Tab2"
+Tab2.Parent = Main
+Tab2.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Tab2.Position = UDim2.new(-0.00435775518, 0, -0.00041398406, 0)
+Tab2.Size = UDim2.new(0, 578, 0, 340)
+Tab2.Visible = false
+Tab2.Active = false
+Tab2.Draggable = true
+
+UICorner_8.CornerRadius = UDim.new(0, 9)
+UICorner_8.Parent = Tab2
+
+Title_2.Name = "Title"
+Title_2.Parent = Tab2
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Size = UDim2.new(0, 578, 0, 56)
+Title_2.Font = Enum.Font.Ubuntu
+Title_2.Text = "dude's yba stand farm essentials"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+Separator_2.Name = "Separator"
+Separator_2.Parent = Tab2
+Separator_2.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Separator_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Separator_2.BorderSizePixel = 0
+Separator_2.Position = UDim2.new(0, 0, 0.188235298, 0)
+Separator_2.Size = UDim2.new(0, 578, 0, 6)
+
+Back.Name = "Back"
+Back.Parent = Tab2
+Back.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Back.Position = UDim2.new(0.654999971, 0, 0.882000029, 0)
+Back.Size = UDim2.new(0, 200, 0, 40)
+Back.Font = Enum.Font.Ubuntu
+Back.Text = "<<< Back"
+Back.TextColor3 = Color3.fromRGB(255, 255, 255)
+Back.TextScaled = true
+Back.TextSize = 14.000
+Back.TextWrapped = true
+Back.MouseButton1Down:Connect(function()
+	Tab1.Active = true
+	Tab1.Visible = true
+	
+	Tab2.Active = false
+	Tab2.Visible = false
+end)
+
+UICorner_9.CornerRadius = UDim.new(0, 9)
+UICorner_9.Parent = Back
+
+Requiem.Name = "Requiem"
+Requiem.Parent = Tab2
+Requiem.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Requiem.Position = UDim2.new(0.0553633235, 0, 0.314705878, 0)
+Requiem.Size = UDim2.new(0, 200, 0, 50)
+Requiem.Font = Enum.Font.Ubuntu
+Requiem.Text = "Use Requiem"
+Requiem.TextColor3 = Color3.fromRGB(255, 255, 255)
+Requiem.TextScaled = true
+Requiem.TextSize = 14.000
+Requiem.TextWrapped = true
+Requiem.MouseButton1Down:Connect(function()
+	local Player = game.Players.LocalPlayer
+	local Character = Player.Character
+
+	function Requiem()
+		local ohString1 = "EndDialogue"
+		local ohTable2 = {
+			["NPC"] = "Requiem Arrow", 
+			["Option"] = "Option1", 
+			["Dialogue"] = "Dialogue2"
+		}
+
+		Character.RemoteEvent:FireServer(ohString1, ohTable2)
+		print("-- Used Requiem Arrow --")
+	end
+
+	function Worthiness()
+
+		local ohString1 = "LearnSkill"
+		local ohTable2 = {
+			["Skill"] = "Agility I",
+			["SkillTreeType"] = "Character"
+		}
+
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+
+		ohTable2["Skill"] = "Agility II"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+		ohTable2["Skill"] = "Agility III"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+		ohTable2["Skill"] = "Agility IV"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+		ohTable2["Skill"] = "Agility V"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+		ohTable2["Skill"] = "Worthiness I"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+		ohTable2["Skill"] = "Worthiness II"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+		ohTable2["Skill"] = "Sturdiness I"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+		ohTable2["Skill"] = "Worthiness III"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+		ohTable2["Skill"] = "Worthiness IV"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+		ohTable2["Skill"] = "Worthiness V"
+		Character.RemoteFunction:InvokeServer(ohString1, ohTable2)
+	end
+
+	Worthiness()
+	Requiem()
+end)
+
+UICorner_10.CornerRadius = UDim.new(0, 9)
+UICorner_10.Parent = Requiem
+
+IY.Name = "IY"
+IY.Parent = Tab2
+IY.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+IY.Position = UDim2.new(0.0553633235, 0, 0.673529387, 0)
+IY.Size = UDim2.new(0, 200, 0, 50)
+IY.Font = Enum.Font.Ubuntu
+IY.Text = "Infinite Yield"
+IY.TextColor3 = Color3.fromRGB(255, 255, 255)
+IY.TextScaled = true
+IY.TextSize = 14.000
+IY.TextWrapped = true
+IY.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+UICorner_11.CornerRadius = UDim.new(0, 9)
+UICorner_11.Parent = IY
+
+Buy.Name = "Buy"
+Buy.Parent = Tab2
+Buy.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Buy.Position = UDim2.new(0.598615885, 0, 0.314705878, 0)
+Buy.Size = UDim2.new(0, 200, 0, 50)
+Buy.Font = Enum.Font.Ubuntu
+Buy.Text = "Buy Requiem"
+Buy.TextColor3 = Color3.fromRGB(255, 255, 255)
+Buy.TextScaled = true
+Buy.TextSize = 14.000
+Buy.TextWrapped = true
+Buy.MouseButton1Down:Connect(function()
+	local Player = game.Players.LocalPlayer
+	local Character = Player.Character
+
+	function BuyRequiem()
+		local ohString1 = "EndDialogue"
+		local ohTable2 = {
+			["NPC"] = "Isabelle the Arrowsmith", 
+			["Option"] = "Option1", 
+			["Dialogue"] = "Dialogue4"
+		}
+		Character.RemoteEvent:FireServer(ohString1, ohTable2)
+	end
+
+	BuyRequiem()
+end)
+
+UICorner_12.CornerRadius = UDim.new(0, 9)
+UICorner_12.Parent = Buy
+
+Item.Name = "Item"
+Item.Parent = Tab2
+Item.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Item.Position = UDim2.new(0.598615885, 0, 0.673529387, 0)
+Item.Size = UDim2.new(0, 200, 0, 50)
+Item.Font = Enum.Font.Ubuntu
+Item.Text = "Item ESP"
+Item.TextColor3 = Color3.fromRGB(255, 255, 255)
+Item.TextScaled = true
+Item.TextSize = 14.000
+Item.TextWrapped = true
+Item.MouseButton1Down:Connect(function()
+	if not pcall(function() return syn.protect_gui end) then
+		syn = {}
+		syn.protect_gui = function(egg)
+			egg.Parent = game.CoreGui
+		end
+	end
+
+	loadstring(game:HttpGet("https://gist.githubusercontent.com/Chrrxs/d2dfdcde75c2d11b173aa664c0a6b755/raw", true))()
+end)
+
+UICorner_13.CornerRadius = UDim.new(0, 9)
+UICorner_13.Parent = Item
+
+Warning_2.Name = "Warning"
+Warning_2.Parent = Tab2
+Warning_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Warning_2.BackgroundTransparency = 1.000
+Warning_2.Position = UDim2.new(0.598615885, 0, 0.461764693, 0)
+Warning_2.Size = UDim2.new(0, 200, 0, 50)
+Warning_2.Font = Enum.Font.Ubuntu
+Warning_2.Text = "Requirements: 1 Mysterious Arrow + 7.5k Cash + SBR Quest Completed."
+Warning_2.TextColor3 = Color3.fromRGB(255, 255, 0)
+Warning_2.TextScaled = true
+Warning_2.TextSize = 14.000
+Warning_2.TextWrapped = true
+
+Close_2.Name = "Close"
+Close_2.Parent = Tab2
+Close_2.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Close_2.Position = UDim2.new(-0.00200000009, 0, 0.882000029, 0)
+Close_2.Size = UDim2.new(0, 200, 0, 40)
+Close_2.Font = Enum.Font.Ubuntu
+Close_2.Text = "Close"
+Close_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close_2.TextScaled = true
+Close_2.TextSize = 14.000
+Close_2.TextWrapped = true
+Close_2.MouseButton1Down:Connect(function()
+	YBA:Destroy()
+end)
+
+UICorner_14.CornerRadius = UDim.new(0, 9)
+UICorner_14.Parent = Close_2
+
+-- Scripts:
+
+local function XKQR_fake_script() -- YBA.LocalScript 
+	local script = Instance.new('LocalScript', YBA)
+
+	local Main = script.Parent.Main
+	local Opened = true
+
+	local UserInputService = game:GetService("UserInputService")
+
+	UserInputService.InputBegan:Connect(function(KeyCode)
+		if KeyCode.KeyCode == Enum.KeyCode.RightShift then
+			if Opened == true then
+				Main.Visible = false
+				Opened = false
+			elseif Opened == false then
+				Main.Visible = true
+				Opened = true
+			end
+		end
+	end)
+end
+coroutine.wrap(XKQR_fake_script)()
